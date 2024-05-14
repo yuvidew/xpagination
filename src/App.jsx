@@ -9,9 +9,10 @@ const App = () => {
       const res = await fetch("https://geektrust.s3-ap-southeast-1.amazonaws.com/adminui-problem/members.json")
       const data = await res.json()
       setUsers(data)
+      console.log(data);
     } catch (error) {
       console.error(error)
-      alert("failed to fetch to data")
+      window.alert("failed to fetch data");
     }
   }
 
