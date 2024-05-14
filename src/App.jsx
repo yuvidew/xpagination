@@ -11,6 +11,7 @@ const App = () => {
       setUsers(data)
     } catch (error) {
       console.error(error)
+      alert("failed to fetch to data")
     }
   }
 
